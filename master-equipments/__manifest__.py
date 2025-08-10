@@ -16,6 +16,7 @@ This module allows you to manage master equipment records, including their detai
     "depends": ["base"],
     "data": [
         "security/ir.model.access.csv",
+        "views/master_equipment_menus.xml"
 
     ]
 }

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <menuitem id="master-equipments_menu_root" name="Equipment Category" parent="stock.menu_stock_config_settings" sequence="6"/>
+</odoo>
