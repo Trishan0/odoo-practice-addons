@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
-    <menuitem id="master-equipments_menu_root" name="Equipment Category" parent="stock.menu_stock_config_settings" sequence="6"/>
+    <menuitem id="menu_master_equipments_category_menu_root" name="Equipment Category" parent="stock.menu_stock_config_settings"
+              action="master_equipment_category_action" sequence="5"/>
 </odoo>
