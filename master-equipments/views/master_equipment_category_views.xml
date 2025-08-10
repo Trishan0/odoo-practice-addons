@@ -8,7 +8,7 @@
         <field name="arch" type="xml">
             <list string="Equipment Categories" editable="top">
                 <field name="name"/>
-                <field name="title"/>
+                <field name="reference"/>
             </list>
         </field>
     </record>
@@ -20,8 +20,8 @@
         <field name="model">master.equipment.category</field>
         <field name="arch" type="xml">
             <search string="Search Title">
-                <field name="name" string="Reference" filter_domain="[('name','ilike',self)]"/>
-                <field name="title"/>
+                <field name="name" string="Title" filter_domain="[('name','ilike',self)]"/>
+                <field name="reference"/>
             </search>
         </field>
     </record>
