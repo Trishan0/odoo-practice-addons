@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!--    Tree View-->
+    <record id="view_master_equipment_category_tree" model="ir.ui.view">
+        <field name="name">master.equipment.category.tree</field>
+        <field name="model">master.equipment.category</field>
+        <field name="arch" type="xml">
+            <list string="Equipment Categories" editable="top">
+                <field name="name"/>
+                <field name="title"/>
+            </list>
+        </field>
+    </record>
+
+
+    <!--    Search View-->
+    <record id="view_master_equipment_category_search" model="ir.ui.view">
+        <field name="name">master.equipment.category.search</field>
+        <field name="model">master.equipment.category</field>
+        <field name="arch" type="xml">
+            <search string="Search Title">
+                <field name="name" string="Reference" filter_domain="[('name','ilike',self)]"/>
+                <field name="title"/>
+            </search>
+        </field>
+    </record>
+
+<!--    Action-->
+    <record id="master_equipment_category_action" model="ir.actions.act_window">
+        <field name="name">Master Equipment Category</field>
+        <field name="res_model">master.equipment.category</field>
+        <field name="view_mode">list,search</field>
+    </record>
+
+</odoo>
