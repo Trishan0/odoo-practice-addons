@@ -13,11 +13,12 @@ This module allows you to manage master equipment records, including their detai
     'installable': True,
     'application': True,
 
-    "depends": ["base","stock"],
+    "depends": ["base","stock","purchase"],
     "data": [
         "security/ir.model.access.csv",
         "views/master_equipment_category_views.xml",
 		"views/product_template_view.xml",
+		"views/purchase_order_view.xml",
         "views/master_equipment_menus.xml",
 
     ]
