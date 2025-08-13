@@ -16,6 +16,7 @@ This module allows you to manage master equipment records, including their detai
     "depends": ["base","stock","purchase"],
     "data": [
         "security/ir.model.access.csv",
+        "security/master_equipment_category_rules.xml",
         "views/master_equipment_category_views.xml",
 		"views/product_template_view.xml",
 		"views/purchase_order_view.xml",
