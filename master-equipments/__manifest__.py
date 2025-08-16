@@ -21,6 +21,7 @@ This module allows you to manage master equipment records, including their detai
 		"views/product_template_view.xml",
 		"views/purchase_order_view.xml",
         "views/master_equipment_menus.xml",
+        "views/res_partner.xml",
 
     ]
 }
