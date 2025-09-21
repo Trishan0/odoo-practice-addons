@@ -2,3 +2,4 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 aceess_master_equipment_category_user,master.equipment.category,model_master_equipment_category,base.group_user,1,0,0,0
 aceess_master_equipment_category_inventory_manager,master.equipment.category,model_master_equipment_category,stock.group_stock_manager,1,0,1,0
 aceess_master_equipment_category_admin,master.equipment.category,model_master_equipment_category,base.group_system,1,1,1,1
+access_proc_manager_report_wizard_user,proc.manager.report.wizard,model_proc_manager_report_wizard,base.group_user,1,1,1,1

@@ -1,0 +1,28 @@
+<odoo>
+    <data>
+        <record id="proc_manager_report_wizard_form_view" model="ir.ui.view">
+            <field name="name">proc.manager.report.wizard.form.view</field>
+            <field name="model">proc.manager.report.wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name" widget="many2many_tags"/>
+                        </group>
+                    </sheet>
+                    <footer>
+                        <button name="filter_po_by_proc_manager" string="Show Orders" type="object" class="btn-primary"/>
+                        <button name="cancel" string="Cancel" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="proc_manager_report_wizard_action" model="ir.actions.act_window">
+            <field name="name">Procurement Manager Report Wizard</field>
+            <field name="res_model">proc.manager.report.wizard</field>
+            <field name="view_mode">form,list</field>
+            <field name="target">new</field>
+        </record>
+    </data>
+</odoo>
