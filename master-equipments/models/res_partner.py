@@ -11,6 +11,7 @@ class ResPartner(models.Model):
 
     is_filter_po_products_category = fields.Boolean(string="Filter Products in PO based on Category",default=False)
     product_list_ids = fields.Many2many('product.product')
+    vendor_priority = fields.Selection([('low',"Low"),("medium","Medium"),("high","High"),("critical","Critical"),("strategic","Strategic")],default="medium")
 
     @api.constrains('mobile')
     def _check_mobile_number(self):
